@@ -16,7 +16,7 @@ window.addEventListener("load",function(){
 				for(elemento in productos){					
 					document.getElementById("listadoProductos").insertAdjacentHTML("beforeend","<div class='prod' id='prod"+i+"' draggable='true'></div")
 					document.getElementById("prod"+i).insertAdjacentHTML("beforeend","<h1 class='nombre'>"+productos[elemento].nombre+"</h3>")					
-					document.getElementById("prod"+i).insertAdjacentHTML("beforeend","<h1 class='precio'>"+productos[elemento].precio+"</h3>")					
+					document.getElementById("prod"+i).insertAdjacentHTML("beforeend","<h1 class='precio'>"+productos[elemento].precio+"€</h3>")					
 					document.getElementById("prod"+i).insertAdjacentHTML("beforeend","<img src='"+productos[elemento].foto+"'>")					
 					i++;
 				}
