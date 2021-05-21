@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <title>Admin Site</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="iniciar.html">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <form class="formulario2">
+            <div id="ins">
+                <h3>Insertar un nuevo Producto</h3>
+                <div class="datos">
+                    <label>Nombre</label>
+                    <input type="text" id="nombreprod">
+                </div>   
+                <div class="datos">
+                    <label>Precio</label>
+                    <input type="number" id="precioprod">
+                </div>     
+                <div class="datosArchivo">
+                    <label>Foto</label>
+                    <input type="file" id="fileFoto"><br>
+                </div>                    
+                <input type="button" value="Insertar" id="insertar">
+                <button id="genPDF">Generar PDF</button>
+            </div>        
+            <div id="mod">
+                <h3>Modificar un Producto</h3>
+                <div class="datos">
+                    <label>Nombre</label>
+                    <input type="text" id="nombreDrag" disabled>
+                </div>   
+                <div class="datos">
+                    <label>Precio</label>
+                    <input type="text" id="precioDrag">
+                </div>     
+                <div class="datosArchivo">
+                    <label>Foto</label>
+                    <input type="file" id="fileFotoDrag"><br>
+                </div>   
+                <input type="button" value="Modificar" id="modificar">
+                <input type="button" value="Limpiar" id="limpiar"><br><br>
+                <b><a class="rojo">Las fotos deberan situarse en el directorio /fotos</a></b><br>
+            </div>         
+        </form>    
+        <article id="listadoProductos" class="derecha">
+            <div id="not-related">
+                <h1>Listado de Productos</h1>
+                <button id="eliminar">Eliminar</button>
+                <button id="cancelar">Cancelar</button>
+            </div>
+        </article>
+    </div>    
+</body>
+<script src="js/jQuery.js"></script>
+<!--<script src="js/pdf.js"></script>-->
+<script src="js/super.js"></script>
+<script src="js/eliminar.js"></script>
+<script src="js/adminSite.js"></script>
+<script src="js/insertar.js"></script>
+<script src="js/modificacion.js"></script>
+<!--<script src="js/jsPDF-1.3.2/jspdf.js"></script>-->
+</html>

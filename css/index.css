@@ -1,0 +1,137 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(178, 67, 206);
+}
+
+#listadoProductos{
+    width: 49%;
+    height: 100%;    
+}
+
+
+img{
+    width: 100px;
+}
+
+.prod{
+    border: green solid 2px;
+    margin: 5px;
+    padding: 10px;
+    height: 100px;
+    width: 90%;
+    background-color: rgb(77, 202, 104);
+    border-radius: 10px;
+}
+
+.prod:hover{
+    border: rgb(6, 82, 182) solid 2px;
+    background-color: rgb(0, 153, 255);
+    cursor: pointer;
+}
+
+.prod h1{
+    float: left;
+    margin: 10px;
+}
+
+.prod img{
+    float: right;
+}
+
+.formulario2{
+    padding: 20px;
+    background-color: rgb(155, 106, 201);
+    width: 46%;
+    float: left;
+    border-radius: 20px;    
+}
+
+body{
+    background-color: rgb(155, 106, 201);
+}
+
+.datos{
+    margin: 10px;
+    width: 250px;
+}
+
+.datosArchivo{
+    margin: 10px;
+    width: 350px;
+}
+
+.datosArchivo>input{
+    float: right;
+}
+
+.datos>input{
+    float: right;
+}
+.derecha{
+    float: right;
+}
+
+.rojo{
+    color: rgb(252, 87, 87);
+}
+
+.formulario{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    background-color: rgb(109, 38, 175);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 60px;
+    width: 500px;            
+    margin-top: 10px;
+    margin-left: 35%;
+    
+}
+.formulario input[type='button']{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    margin-bottom: 20px;   
+}
+
+#eliminar{
+    display: none;
+}
+
+#cancelar{
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    #listadoProductos {
+      float: left;
+      width: 100%;
+    }
+    .formulario2{
+        width: 100%;
+    }
+}
